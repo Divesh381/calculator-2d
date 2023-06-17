@@ -1,0 +1,114 @@
+
+body
+{
+    /* background-color: aqua; */
+    box-sizing: border-box;
+}
+#calcu
+{
+    
+    background-color: #02d7f8;  
+    align-items: center;
+    justify-content: center;
+     border-radius: 5px;
+     box-shadow: 2px 1px 0px 2px;
+    border: 2px solid ;
+    width: 310px;
+    height: 280px;
+    margin: 5px auto 0 10px;
+}
+
+#logo-img
+{
+    margin-top:0;
+    width: 60px;
+    height: 30px;
+   float: right;
+   top: -10%;
+   bottom: 0;
+   margin-right: 12px;
+   border-radius: 50px;
+   /* left: -50%; */
+    background-color: rgb(43, 78, 78);
+    
+}
+.main_calcu{
+
+    border: 2px solid ;
+    border-radius: 10px;
+    max-width: 330px;
+    max-height: 940px;
+    box-shadow: 2px 3px 0px 2px;
+    background-color:#78716c;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 5px;
+    justify-content: center;
+    margin: 70px auto 0 auto;
+    
+}
+.btn-calcu
+{
+    background-color: rgb(221, 221, 214);
+    color: black;
+    font-size: large;
+    padding:12px 25px;
+    border: 2px solid rgb(20, 20, 20);
+    box-shadow: 2px 3px 1px;
+    font-size: 20px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+#backCross
+{
+    color: rgb(255, 8, 0);
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    box-shadow: black;
+    font-size: 12px;
+    
+}
+
+.btn-calcu:active {
+    will-change: transform;
+    transform: perspective(80px) rotateX(5deg) rotateY(1deg) translateY(3px) scale(0.96);
+    /* height: 64px; */
+    border: 0.25px solid rgba(0, 0, 0, 0.2);
+    box-shadow: inset -4px -8px 0px rgba(255, 255, 255, 0.2),
+      inset -4px -6px 0px rgba(0, 0, 0, 0.8),
+      0px 1px 0px rgba(0, 0, 0, 0.9),
+      0px 1px 0px rgba(255, 255, 255, 0.2);
+    transition: all .1s ease-in-out 0s;
+  }
+  
+  .btn-calcu::after:active {
+    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.2));
+  }
+
+/* .btn-calcu:hover
+
+{
+    cursor: pointer;
+    transform: scaleX(.9) scaleY(.9);
+ } */
+
+
+#result
+{
+    text-align: right;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    background-color:white;
+    margin: 0 auto 0 10px;
+    width: 305px;
+    height: 60px;
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 30px;
+    color: black;
+    /* text-decoration:none; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <div  class="main_calcu">
+        <table id="calcu" >
+        <tr>
+            <image src="logo.png" id="logo-img"></image>
+        </tr>
+            <tr id="text-area">
+                <input type="text"  name="" id="result" disabled>
+             </tr>
+            <tr>
+                <td><input type="button" class="btn-calcu"  onclick="clr()"  value="C" style="background-color:rgb(250, 3, 3);"></td>
+                <td><input type="button" class="btn-calcu" id="backCross" onclick="clr()" value="⌫"></td>
+                <td><input type="button" class="btn-calcu" onclick="dis('%')"  onkeydown="myFunction(event)" value="%"></td>
+                <td><input type="button" class="btn-calcu" onclick="dis('÷')" onkeydown="myFunction(event)" value="÷ "></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="btn-calcu" onclick="dis('7')" onkeydown="myFunction(event)" value="7 "></td>
+                <td><input type="button" class="btn-calcu" onclick="dis('8')" onkeydown="myFunction(event)" value="8 "></td>
+                <td><input type="button" class="btn-calcu" onclick="dis('9')" onkeydown="myFunction(event)" value="9 "></td>
+                <td><input type="button" class="btn-calcu" onclick="dis('*')" onkeydown="myFunction(event)" value="x "></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="btn-calcu" onclick="dis('4')" onkeydown="myFunction(event)" value="4 "></td>
+                <td><input type="button" class="btn-calcu" onclick="dis('5')" onkeydown="myFunction(event)" value="5 "></td>
+                <td><input type="button" class="btn-calcu" onclick="dis('6')" onkeydown="myFunction(event)" value="6 "></td>
+                <td><input type="button" class="btn-calcu" onclick="dis('-')" onkeydown="myFunction(event)" value="− "></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="btn-calcu" onclick="dis('1')" onkeydown="myFunction(event)" value="1 "></td>
+                <td><input type="button" class="btn-calcu" onclick="dis('2')" onkeydown="myFunction(event)" value="2 "></td>
+                <td><input type="button" class="btn-calcu" onclick="dis('3')" onkeydown="myFunction(event)" value="3 "></td>
+                <td><input type="button" class="btn-calcu" onclick="dis('+')" onkeydown="myFunction(event)" value="+ "></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="btn-calcu"   value="⅍"></td>
+                <td><input type="button" class="btn-calcu" onclick="dis('0')" onkeydown="myFunction(event)" value="0 "></td>
+                <td><input type="button" class="btn-calcu" onclick="dis('.')" onkeydown="myFunction(event)" value=" ⋅ "></td>
+                <td><input type="button" class="btn-calcu" onclick="solve()"  value="= "></td>
+                
+            </tr>
+        </table>
+    </div>
+    
+
+     
+    <script src="jsCalcul.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
+    integrity="sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"
+    integrity="sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
